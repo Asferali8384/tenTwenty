@@ -31,6 +31,7 @@ This project enables users to log in and add notes in real time. All data is sec
 
 - Currently focusing on product design with a practical, result-driven mindset.
 
+📁 Folder Structure
 
 src/
 ├── app/
@@ -45,5 +46,44 @@ src/
 │   └── notesSchema.js  # Mongoose Notes schema
 ├── redux/
 │   └── apiSlice.js     # API calls and queries using Redux Toolkit
+
+🛠️ Tech Stack
+
+- Next.js – Full-stack framework for SSR and API routes
+
+- MongoDB – NoSQL database to store users and notes
+
+- Tailwind CSS – Utility-first CSS framework
+
+
+📦 Dependencies Used
+
+| Dependency        | Purpose                                        |
+| ----------------- | ---------------------------------------------- |
+| **Redux Toolkit** | Simplified global state management & API calls |
+| **bcrypt**        | Secure password hashing                        |
+| **date-fns**      | Date manipulation and formatting               |
+| **dotenv**        | Environment variable management                |
+| **jsonwebtoken**  | JWT-based secure user authentication           |
+| **lucide-react**  | Icon set for UI components                     |
+| **mongoose**      | MongoDB ODM and schema handling                |
+| **notistack**     | Toast message handling with notifications      |
+
+
+🔌 API Testing
+Use Postman to test API endpoints:
+🔗 Postman Workspace Link
+
+
+🚀 Hosting
+App is live on Vercel:
+🔗 Live App
+
+
+📝 Final Note
+Every detail in this document and on my resume reflects real experiences and work. If this aligns with your expectations, I’d be happy to have a detailed conversation soon.
+
+
+
 
 
