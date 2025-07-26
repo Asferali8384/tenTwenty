@@ -8,6 +8,7 @@ import { SnackbarProvider } from "notistack";
 import { createContext, useContext, useEffect, useState } from "react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { usePathname } from "next/navigation";
 
 const UserContext = createContext();
 export const rootData = () => useContext(UserContext);
@@ -15,14 +16,16 @@ export const rootData = () => useContext(UserContext);
 export default function RootLayout({ children }) {
   const [user, setUser] = useState(null);
 
-  const storedUser = localStorage.getItem("user");
+  const pathName = usePathname();
+
   useEffect(() => {
+    const storedUser = localStorage.getItem("user");
     if (storedUser) {
       setUser(JSON.parse(storedUser));
     } else {
       setUser(null);
     }
-  }, [storedUser]);
+  }, [pathName]);
 
   return (
     <html lang="en">
