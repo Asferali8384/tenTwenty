@@ -134,7 +134,7 @@ export default function LoginPage() {
         style={{ backgroundColor: "#141311" }}
       >
         <img
-          src="./assets/loginBanner.webp"
+          src="./assets/loginBanner2.webp"
           alt="Login visual"
           className="w-full h-full object-contain"
         />
