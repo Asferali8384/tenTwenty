@@ -1,3 +1,25 @@
+🔷 Instructions
+
+- The project is deployed on Vercel. To run it locally, please follow these steps:
+
+- Clone the repository from GitHub.
+
+- Install the dependencies using npm install.
+
+- Create a .env.local file in the root directory.
+
+- Add your test database connection string and any other required environment variables to .env.local.
+
+- Start the development server with npm run dev.
+
+
+
+
+🔷 Time Spend - 20 - 28
+
+
+
+
 🔷 Project Overview
 
 This project enables users to log in and add notes in real time. All data is securely stored in a MongoDB database, and routes are protected with authentication. Key features include:
@@ -16,6 +38,7 @@ This project enables users to log in and add notes in real time. All data is sec
 
 
 
+
 👨‍💻 About Me
 
 - I’m a certified MERN stack developer with hands-on experience in frontend development. 
@@ -31,6 +54,7 @@ This project enables users to log in and add notes in real time. All data is sec
 - Used Figma for design handoffs and visual planning.
 
 - Currently focusing on product design with a practical, result-driven mindset.
+
 
 
 
@@ -55,6 +79,7 @@ This project enables users to log in and add notes in real time. All data is sec
 
 
 
+
 🛠️ Tech Stack
 
 - Next.js – Full-stack framework for SSR and API routes
@@ -62,6 +87,7 @@ This project enables users to log in and add notes in real time. All data is sec
 - MongoDB – NoSQL database to store users and notes
 
 - Tailwind CSS – Utility-first CSS framework
+
 
 
 
@@ -80,6 +106,7 @@ This project enables users to log in and add notes in real time. All data is sec
 
 
 
+
 🔌 API Testing
 
 - Use Postman to test API endpoints
@@ -87,10 +114,12 @@ This project enables users to log in and add notes in real time. All data is sec
 
 
 
+
 🚀 Hosting
 
 - App is live on Vercel
 - 🔗 [Live App](https://ten-twenty-two.vercel.app/login)
+
 
 
 

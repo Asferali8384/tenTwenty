@@ -1,14 +1,29 @@
 "use client";
 
 import { useLoginMutation } from "@/reduxslice/authApi";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { enqueueSnackbar } from "notistack";
 import React, { useState, useEffect } from "react";
+import { rootData } from "../layout";
 
 export default function LoginPage() {
   const router = useRouter();
   const [formData, setFormData] = useState({ username: "", password: "" });
   const [submitted, setSubmitted] = useState(false);
+
+  const { user } = rootData();
+
+  const pathname = usePathname();
+
+  console.log(pathname, "pathname");
+
+  useEffect(() => {
+    if (user && pathname === "/login") {
+      router.push("/dashboard");
+    }
+  }, [user, router.pathname]);
+
+  console.log(router.pathname, "router.pathname");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
