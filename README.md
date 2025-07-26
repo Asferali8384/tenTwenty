@@ -1,5 +1,11 @@
 ## Project Overview
 
+This project allows users to log in and add notes in real-time, with all data securely stored in the database. Routes are protected with authentication, ensuring users can only access their own notes and cannot view others’ data. Unauthorized users cannot access protected URLs.
+
+The UI is simple but functional, with some responsiveness built in. The dashboard dynamically calculates weeks based on the data. A few minor features are still pending due to time constraints.
+
+## About Me
+
 I am a certified MERN stack developer with experience as a software developer, primarily focused on frontend development. During my previous role at Urbanrise Const Pvt Limited, one of South India's largest companies, I contributed to product development and earned recognition for implementing innovative ideas.
 
 My skills span frontend design and development, with intermediate proficiency in Figma, which helps streamline the design-to-development process. I also possess backend and database knowledge, enabling me to work effectively across the full stack.
