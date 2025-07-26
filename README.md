@@ -1,57 +1,49 @@
-## Project Overview
+🔷 Project Overview
 
-This project allows users to log in and add notes in real-time, with all data securely stored in the database. Routes are protected with authentication, ensuring users can only access their own notes and cannot view others’ data. Unauthorized users cannot access protected URLs.
+This project enables users to log in and add notes in real time. All data is securely stored in a MongoDB database, and routes are protected with authentication. Key features include:
 
-The UI is simple but functional, with some responsiveness built in. The dashboard dynamically calculates weeks based on the data. A few minor features are still pending due to time constraints.
+🔐 Authentication: Users can only access their own notes; unauthorized access is blocked.
 
-## About Me
+📂 Protected Routes: If not logged in, users are restricted from accessing any protected URLs.
 
-I am a certified MERN stack developer with experience as a software developer, primarily focused on frontend development. During my previous role at Urbanrise Const Pvt Limited, one of South India's largest companies, I contributed to product development and earned recognition for implementing innovative ideas.
+📋 Notes Feature: Users can create and manage notes dynamically.
 
-My skills span frontend design and development, with intermediate proficiency in Figma, which helps streamline the design-to-development process. I also possess backend and database knowledge, enabling me to work effectively across the full stack.
+📅 Dynamic Dashboard: Weeks are calculated dynamically based on the stored data.
 
-Currently, I am expanding my expertise in product design while continuing to deliver high-quality frontend solutions. I prefer a practical, results-oriented approach over flashy presentations without substance, focusing on meaningful impact and clear communication.
+💻 UI/UX: Simple, functional, and slightly responsive UI.
 
-## Important Note
+⚙️ Pending Work: A few minor features are pending due to time constraints.
 
-If you haven’t read the above, I’m simply sharing what has happened and what I’ve done in my past work. Every experience in my resume and projects has a real story behind it. If things go well, we can meet and have a detailed conversation soon.
 
-## Folder Structure
+👨‍💻 About Me
+
+- I’m a certified MERN stack developer with hands-on experience in frontend development. 
+
+- In my previous role at Urbanrise Constructions Pvt Ltd, one of South India’s largest firms
+
+- Contributed to multiple products with real-time functionality.
+
+- Earned recognition for implementing innovative ideas.
+
+- Specialized in frontend development while also handling backend logic.
+
+- Used Figma for design handoffs and visual planning.
+
+- Currently focusing on product design with a practical, result-driven mindset.
+
 
 src/
 ├── app/
-│ ├── api/ # API route handlers
-│ ├── components/ # Reusable UI components
-│ └── pages/ # Next.js pages (if used)
-├── components/ # More reusable components (shared globally)
-├── lib/ # Utilities and helpers
-│ └── mongodb.js # MongoDB connection setup
-├── models/ # Mongoose schemas and models
-│ ├── userSchema.js # User schema
-│ └── notesSchema.js # Notes schema
-└── redux/ # Redux Toolkit slices and API handling
-└── apiSlice.js # API calls and queries management
+│   ├── api/            # API route handlers
+│   ├── components/     # Page-level reusable UI components
+│   └── pages/          # (Optional) Next.js pages
+├── components/         # Globally shared reusable components
+├── lib/
+│   └── mongodb.js      # MongoDB connection setup
+├── models/
+│   ├── userSchema.js   # Mongoose User schema
+│   └── notesSchema.js  # Mongoose Notes schema
+├── redux/
+│   └── apiSlice.js     # API calls and queries using Redux Toolkit
 
-## Tech Stack
 
-- **Next.js** – Full-stack React framework for both frontend and backend development  
-- **MongoDB** – NoSQL database for storing user and timesheet data  
-- **Tailwind CSS** – Utility-first CSS framework for styling  
-
-## Dependencies Used
-
-| Dependency       | Purpose                                          |
-| ---------------- | -----------------------------------------------|
-| **Redux Toolkit**  | Simplifies API handling and state management    |
-| **bcrypt**         | Password hashing for secure authentication      |
-| **date-fns**       | Date formatting and conversion                   |
-| **dotenv**         | Environment variable management                   |
-| **jsonwebtoken**   | JWT token generation for user authentication     |
-| **lucide-react**   | React icons for UI components                     |
-| **mongoose**       | MongoDB object modeling and schema management    |
-| **notistack**      | Notification system for displaying toast messages|
-
-## API Testing
-
-- Use **Postman** to test backend API endpoints.
-- Post Man Link - https://martian-robot-496005.postman.co/workspace/Team-Workspace~6de5bd93-27bf-4d69-8b7b-1fe94007fca7/request/32018086-32635c1d-5689-40d8-94e2-98ddb21b5751
