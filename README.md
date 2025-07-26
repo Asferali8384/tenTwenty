@@ -1,6 +1,14 @@
 ## Project Overview
 
-This project is a **Time Sheet Management App** built with a modern tech stack and designed for efficiency and scalability.
+I am a certified MERN stack developer with experience as a software developer, primarily focused on frontend development. During my previous role at Urbanrise Const Pvt Limited, one of South India's largest companies, I contributed to product development and earned recognition for implementing innovative ideas.
+
+My skills span frontend design and development, with intermediate proficiency in Figma, which helps streamline the design-to-development process. I also possess backend and database knowledge, enabling me to work effectively across the full stack.
+
+Currently, I am expanding my expertise in product design while continuing to deliver high-quality frontend solutions. I prefer a practical, results-oriented approach over flashy presentations without substance, focusing on meaningful impact and clear communication.
+
+## Important Note
+
+If you haven’t read the above, I’m simply sharing what has happened and what I’ve done in my past work. Every experience in my resume and projects has a real story behind it. If things go well, we can meet and have a detailed conversation soon.
 
 ## Folder Structure
 
@@ -17,7 +25,6 @@ src/
 │ └── notesSchema.js # Notes schema
 └── redux/ # Redux Toolkit slices and API handling
 └── apiSlice.js # API calls and queries management
-
 
 ## Tech Stack
 
