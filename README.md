@@ -15,6 +15,7 @@ This project enables users to log in and add notes in real time. All data is sec
 ⚙️ Pending Work: A few minor features are pending due to time constraints.
 
 
+
 👨‍💻 About Me
 
 - I’m a certified MERN stack developer with hands-on experience in frontend development. 
@@ -31,21 +32,28 @@ This project enables users to log in and add notes in real time. All data is sec
 
 - Currently focusing on product design with a practical, result-driven mindset.
 
+
+
 📁 Folder Structure
 
-src/
-├── app/
-│   ├── api/            # API route handlers
-│   ├── components/     # Page-level reusable UI components
-│   └── pages/          # (Optional) Next.js pages
-├── components/         # Globally shared reusable components
-├── lib/
-│   └── mongodb.js      # MongoDB connection setup
-├── models/
-│   ├── userSchema.js   # Mongoose User schema
-│   └── notesSchema.js  # Mongoose Notes schema
-├── redux/
-│   └── apiSlice.js     # API calls and queries using Redux Toolkit
+| Folder/File            | Description                         |
+| ---------------------- | ----------------------------------- |
+| `src/`                 | Root source folder                  |
+| ├── `app/`             | Application-specific folders        |
+| ├──── `api/`           | API route handlers                  |
+| ├──── `components/`    | Page-level reusable UI components   |
+| └──── `pages/`         | (Optional) Next.js pages            |
+| `components/`          | Globally shared reusable components |
+| `lib/`                 | Library utilities and helpers       |
+| └── `mongodb.js`       | MongoDB connection setup            |
+| `models/`              | Mongoose schemas                    |
+| ├──── `userSchema.js`  | User schema                         |
+| └──── `notesSchema.js` | Notes schema                        |
+| `redux/`               | Redux Toolkit related code          |
+| └── `apiSlice.js`      | API calls and queries               |
+
+
+
 
 🛠️ Tech Stack
 
@@ -54,6 +62,7 @@ src/
 - MongoDB – NoSQL database to store users and notes
 
 - Tailwind CSS – Utility-first CSS framework
+
 
 
 📦 Dependencies Used
@@ -70,16 +79,19 @@ src/
 | **notistack**     | Toast message handling with notifications      |
 
 
+
 🔌 API Testing
 
 - Use Postman to test API endpoints
 - 🔗 Postman Workspace Link
 
 
+
 🚀 Hosting
 
 - App is live on Vercel
 - 🔗 Live App
+
 
 
 📝 Final Note
