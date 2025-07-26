@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleLogOut = () => {
     localStorage.removeItem("user");
     enqueueSnackbar("See You Soon Bye!", {
-      variant: "succes",
+      variant: "warning",
       autoHideDuration: 1000,
     });
     setTimeout(() => {
