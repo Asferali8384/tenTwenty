@@ -122,7 +122,7 @@ export default function LoginPage() {
           <button
             disabled={LoginISLoading}
             type="submit"
-            className="w-full rounded text-white font-semibold bg-blue-600 py-2 mt-2 hover:bg-blue-800 transition duration-300 cursor-pointer"
+            className="w-full rounded text-[#dcab63] font-semibold bg-white-600 py-2 mt-2 hover:bg-green-50 transition duration-300 cursor-pointer border-1"
           >
             {LoginISLoading ? "Checking" : "Submit"}
           </button>
