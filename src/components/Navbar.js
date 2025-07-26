@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { rootData } from "@/app/layout";
+import { enqueueSnackbar } from "notistack";
 
 const Navbar = () => {
   const router = useRouter();
@@ -11,7 +12,13 @@ const Navbar = () => {
 
   const handleLogOut = () => {
     localStorage.removeItem("user");
-    router.push("/login");
+    enqueueSnackbar("See You Soon Bye!", {
+      variant: "succes",
+      autoHideDuration: 1000,
+    });
+    setTimeout(() => {
+      router.push("/login");
+    }, 1000);
   };
 
   return (

@@ -16,9 +16,7 @@ export default function AddTaskModal({
         className="bg-white rounded-xl p-6 w-full max-w-md shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="text-xl font-semibold mb-4">
-          Add Task for {currentDate}
-        </h2>
+        <h2 className="text-xl font-semibold mb-4">Add New Task</h2>
 
         <label className="block mb-2">
           <span className="text-gray-700">Project Name *</span>
@@ -26,7 +24,7 @@ export default function AddTaskModal({
             type="text"
             value={newNotesData?.projectName}
             className="mt-1 block w-full rounded border border-gray-300 shadow-sm p-3"
-            placeholder="Enter project title"
+            placeholder="Enter project Name"
             onChange={(e) =>
               setNewNotesData({ ...newNotesData, projectName: e.target.value })
             }
@@ -42,7 +40,7 @@ export default function AddTaskModal({
             }
             className="mt-1 block w-full rounded border border-gray-300 shadow-sm p-3"
             rows={3}
-            placeholder="Enter description"
+            placeholder="Enter Work Details "
           />
         </label>
 
@@ -62,13 +60,13 @@ export default function AddTaskModal({
         <div className="flex justify-end gap-4">
           <button
             onClick={closeModal}
-            className="px-4 py-2 rounded border border-gray-300 hover:bg-gray-100"
+            className="px-4 py-2 rounded border border-gray-300 hover:bg-green-50 cursor-pointer"
           >
             Cancel
           </button>
           <button
             onClick={handleAddTask}
-            className="px-4 py-2 rounded bg-green-600 text-white hover:bg-green-700"
+            className="px-4 py-2 rounded bg-white-600 text-[#dcab63] hover:bg-green-50 border-1 cursor-pointer"
           >
             Add Task
           </button>

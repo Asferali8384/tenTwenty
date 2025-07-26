@@ -17,11 +17,11 @@ export default function LoginPage() {
 
   // console.log(pathname, "pathname");
 
-  useEffect(() => {
-    if (user && pathname === "/login") {
-      router.push("/dashboard");
-    }
-  }, [user, router.pathname]);
+  // useEffect(() => {
+  //   if (user && pathname === "/login") {
+  //     router.push("/dashboard");
+  //   }
+  // }, [user, pathname]);
 
   // console.log(router.pathname, "router.pathname");
 

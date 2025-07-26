@@ -17,15 +17,14 @@ export default function RootLayout({ children }) {
   const [user, setUser] = useState(null);
   const pathname = usePathname();
 
+  const storedUser = localStorage.getItem("user");
   useEffect(() => {
-    const storedUser = localStorage.getItem("user");
-
     if (storedUser) {
       setUser(JSON.parse(storedUser));
     } else {
       setUser(null);
     }
-  }, [pathname]);
+  }, [storedUser]);
 
   return (
     <html lang="en">
