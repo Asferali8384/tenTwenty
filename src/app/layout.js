@@ -32,7 +32,13 @@ export default function RootLayout({ children }) {
       <body>
         <Provider store={store}>
           <ProtectedRoute>
-            <SnackbarProvider maxSnack={3}>
+            <SnackbarProvider
+              maxSnack={3}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+            >
               <UserContext.Provider value={{ user }}>
                 {user ? (
                   <>

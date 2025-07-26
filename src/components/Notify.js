@@ -1,13 +1,17 @@
 "use client";
 import { useSnackbar } from "notistack";
 
-export default function useNotify({ message, variant, duration }) {
+// Custom hook that returns a reusable notify function
+export default function useNotify() {
   const { enqueueSnackbar } = useSnackbar();
 
-  enqueueSnackbar(message, {
-    variant, // "success" | "error" | "info" | "warning" | "default"
-    autoHideDuration: duration,
-  });
+  // This function can be called manually when needed
+  const notify = ({ message, variant = "default", duration = 3000 }) => {
+    enqueueSnackbar(message, {
+      variant, // "success", "error", "info", "warning", or "default"
+      autoHideDuration: duration,
+    });
+  };
 
   return notify;
 }

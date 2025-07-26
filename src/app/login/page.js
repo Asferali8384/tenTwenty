@@ -15,7 +15,7 @@ export default function LoginPage() {
 
   const pathname = usePathname();
 
-  console.log(pathname, "pathname");
+  // console.log(pathname, "pathname");
 
   useEffect(() => {
     if (user && pathname === "/login") {
@@ -23,7 +23,7 @@ export default function LoginPage() {
     }
   }, [user, router.pathname]);
 
-  console.log(router.pathname, "router.pathname");
+  // console.log(router.pathname, "router.pathname");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -33,7 +33,7 @@ export default function LoginPage() {
     }));
   };
 
-  const [loginUser] = useLoginMutation();
+  const [loginUser, { isLoading: LoginISLoading }] = useLoginMutation();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -42,19 +42,37 @@ export default function LoginPage() {
     try {
       const response = await loginUser(formData).unwrap();
 
-      console.log(response.user, "User Data");
+      // console.log(response.user, "User Data");
 
       if (response.message === "Login successful") {
         localStorage.setItem("user", JSON.stringify(response.user));
+        enqueueSnackbar("Login Success", {
+          autoHideDuration: 1000,
+          variant: "success",
+        });
 
-        router.push("/dashboard");
+        setTimeout(() => {
+          router.push("/dashboard");
+        }, 2000);
       } else {
         console.log("Login failed");
-        // useNotify({ message: "fail", variant: success, duration: 1000 });
-        enqueueSnackbar("Hi", { autoHideDuration: 1000 });
       }
     } catch (err) {
-      console.error("Login error:", err);
+      console.error("Login error:", err?.data?.error);
+      // if(err?.data?.error === ""){}
+      if (err?.data?.error === "User not found") {
+        enqueueSnackbar("User not found", {
+          autoHideDuration: 1000,
+          variant: "error",
+        });
+      }
+
+      if (err?.data?.error === "Invalid password") {
+        enqueueSnackbar("Invalid password", {
+          variant: "error",
+          autoHideDuration: 1000,
+        });
+      }
     }
   };
 
@@ -64,6 +82,10 @@ export default function LoginPage() {
       setSubmitted(false);
     }
   }, [submitted]);
+
+  // useEffect(() => {
+  //   enqueueSnackbar("Hi", { autoHideDuration: 1000 });
+  // }, []);
 
   return (
     <div className="flex flex-col md:flex-row h-screen">
@@ -98,10 +120,11 @@ export default function LoginPage() {
           </div>
 
           <button
+            disabled={LoginISLoading}
             type="submit"
-            className="w-full rounded text-white font-semibold bg-blue-600 py-2 mt-2 hover:bg-blue-800 transition duration-300"
+            className="w-full rounded text-white font-semibold bg-blue-600 py-2 mt-2 hover:bg-blue-800 transition duration-300 cursor-pointer"
           >
-            Submit
+            {LoginISLoading ? "Checking" : "Submit"}
           </button>
         </form>
       </div>
