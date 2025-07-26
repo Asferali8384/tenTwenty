@@ -36,7 +36,7 @@ export default function DashboardPage() {
                   disabled
                   className="px-3 py-1 bg-[#ffff] text-black rounded cursor-not-allowed opacity-50 border-1"
                 >
-                  Filter
+                  Filters
                 </button>
               </div>
 
