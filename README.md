@@ -71,17 +71,20 @@ src/
 
 
 🔌 API Testing
-Use Postman to test API endpoints:
-🔗 Postman Workspace Link
+
+- Use Postman to test API endpoints
+- 🔗 Postman Workspace Link
 
 
 🚀 Hosting
-App is live on Vercel:
-🔗 Live App
+
+- App is live on Vercel
+- 🔗 Live App
 
 
 📝 Final Note
-Every detail in this document and on my resume reflects real experiences and work. If this aligns with your expectations, I’d be happy to have a detailed conversation soon.
+
+- Every detail in this document and on my resume reflects real experiences and work. If this aligns with your expectations, I’d be happy to have a detailed conversation soon.
 
 
 
