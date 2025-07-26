@@ -8,7 +8,7 @@
 
 - Create a .env.local file in the root directory.
 
-- Add your test database connection string and any other required environment variables to .env.local.
+- Add your [database](.env.local) connection string to .env.local.
 
 - Start the development server with npm run dev.
 
