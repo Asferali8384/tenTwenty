@@ -1,6 +1,23 @@
-# Project Overview
+## Project Overview
 
 This project is a **Time Sheet Management App** built with a modern tech stack and designed for efficiency and scalability.
+
+## Folder Structure
+
+src/
+├── app/
+│ ├── api/ # API route handlers
+│ ├── components/ # Reusable UI components
+│ └── pages/ # Next.js pages (if used)
+├── components/ # More reusable components (shared globally)
+├── lib/ # Utilities and helpers
+│ └── mongodb.js # MongoDB connection setup
+├── models/ # Mongoose schemas and models
+│ ├── userSchema.js # User schema
+│ └── notesSchema.js # Notes schema
+└── redux/ # Redux Toolkit slices and API handling
+└── apiSlice.js # API calls and queries management
+
 
 ## Tech Stack
 
@@ -10,8 +27,8 @@ This project is a **Time Sheet Management App** built with a modern tech stack a
 
 ## Dependencies Used
 
-| Dependency     | Purpose                                         |
-| -------------- | -----------------------------------------------|
+| Dependency       | Purpose                                          |
+| ---------------- | -----------------------------------------------|
 | **Redux Toolkit**  | Simplifies API handling and state management    |
 | **bcrypt**         | Password hashing for secure authentication      |
 | **date-fns**       | Date formatting and conversion                   |
@@ -21,3 +38,6 @@ This project is a **Time Sheet Management App** built with a modern tech stack a
 | **mongoose**       | MongoDB object modeling and schema management    |
 | **notistack**      | Notification system for displaying toast messages|
 
+## API Testing
+
+- Use **Postman** to test backend API endpoints.
