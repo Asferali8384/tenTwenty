@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function AddTaskModal({
-  currentDate,
   newNotesData,
   closeModal,
   handleAddTask,

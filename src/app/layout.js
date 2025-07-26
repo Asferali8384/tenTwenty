@@ -6,7 +6,6 @@ import store from "@/reduxslice/store";
 import ProtectedRoute from "@/components/ProtectedRoute.js";
 import { SnackbarProvider } from "notistack";
 import { createContext, useContext, useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
@@ -15,7 +14,6 @@ export const rootData = () => useContext(UserContext);
 
 export default function RootLayout({ children }) {
   const [user, setUser] = useState(null);
-  const pathname = usePathname();
 
   const storedUser = localStorage.getItem("user");
   useEffect(() => {
