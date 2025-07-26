@@ -15,7 +15,7 @@
 
 
 
-🔷 Time Spend - 20 - 28
+🔷 Time Spend - 20hrs to 28hrs
 
 
 
